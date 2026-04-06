@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile - Green Gadgets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="logo2.jpg.png" alt="Green Gadgets Logo" class="logo">
+                <div>
+                    <h1>Green Gadgets</h1>
+                    <p class="tagline">Eco-Friendly Tech for Everyday Life</p>
+                </div>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search eco-friendly tech...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a href="profile.html" class="icon-btn active" title="Profile"><i class="fa-solid fa-user"></i></a>
+                <a href="cart.html" class="icon-btn" title="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="profile-container">
+
+        <!-- Sidebar -->
+        <aside class="profile-sidebar">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <i class="fa-solid fa-user-astronaut"></i>
+                </div>
+                <h2>Jane Doe</h2>
+                <p>Eco-Warrior</p>
+            </div>
+            <ul class="profile-nav">
+                <li><a href="#" class="active"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fa-solid fa-box-open"></i> Orders</a></li>
+                <li><a href="#"><i class="fa-regular fa-heart"></i> Wishlist</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="profile-main">
+            <div class="welcome-banner">
+                <div class="banner-text">
+                    <h2>Hello, Jane!</h2>
+                    <p>Thank you for choosing sustainable technology. You are helping the planet!</p>
+                </div>
+                <i class="fa-solid fa-earth-americas splash-icon"></i>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                    <div class="stat-info">
+                        <h3>Items Purchased</h3>
+                        <p class="stat-value" id="items-purchased">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-wallet"></i></div>
+                    <div class="stat-info">
+                        <h3>Amount Spent</h3>
+                        <p class="stat-value" id="total-spent">$0</p>
+                    </div>
+                </div>
+                <div class="stat-card" style="border: 2px solid #fbc02d;">
+                    <div class="stat-icon" style="background:#fff9c4; color:#fbc02d;"><i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Green Points</h3>
+                        <p class="stat-value">450</p>
+                    </div>
+                </div>
+                <div class="stat-card impact-card">
+                    <div class="stat-icon"><i class="fa-solid fa-smog"></i></div>
+                    <div class="stat-info">
+                        <h3>Total Carbon Saved</h3>
+                        <p class="stat-value" id="carbon-saved">0 kg</p>
+                    </div>
+                </div>
+                <div class="stat-card impact-card" style="background: #e4f5e4;">
+                    <div class="stat-icon" style="background:#c8e6c9; color:#2e7d32;"><i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Energy Saved</h3>
+                        <p class="stat-value" id="energy-saved" style="color: #2e7d32;">0 kWh</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eco Section -->
+            <div class="eco-dashboard">
+                <div class="sustainability-score">
+                    <h3>Sustainability Score</h3>
+                    <div class="score-circle">
+                        <svg viewBox="0 0 36 36" class="circular-chart green">
+                            <path class="circle-bg"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="circle" stroke-dasharray="85, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <text x="18" y="20.35" class="percentage">85%</text>
+                        </svg>
+                    </div>
+                    <p>You are in the top 15% of our green customers!</p>
+                </div>
+
+                <div class="green-tips">
+                    <h3>Personalized Green Tips</h3>
+                    <ul class="tips-list">
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <div>
+                                <h4>Unplug Devices</h4>
+                                <p>Unplugging fully charged devices can save up to 10% on your energy bill.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <div>
+                                <h4>Recycle Old Tech</h4>
+                                <p>We offer a recycling program for your old electronics. Mail them back for store
+                                    credit!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check-circle"></i>
+                            <div>
+                                <h4>Use Natural Light</h4>
+                                <p>Open your blinds during the day. It improves mood and reduces energy consumption.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom" style="margin-top: 0">
+            <p>© 2026 Green Gadgets. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="profile.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

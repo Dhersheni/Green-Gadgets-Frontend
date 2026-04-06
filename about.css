@@ -1,0 +1,127 @@
+/* ABOUT SPECIFIC STYLES */
+
+.about-hero {
+    background: linear-gradient(rgba(212, 253, 219, 0.75), rgba(147, 250, 164, 0.75)), url('about.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5% 80px;
+}
+
+.section-heading {
+    font-size: 2.2rem;
+    color: var(--primary-hover);
+    margin-bottom: 25px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* MISSION & TEAM SECTIONS (Split Layout) */
+.mission-section,
+.team-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.mission-text,
+.team-text {
+    flex: 1;
+}
+
+.mission-text p,
+.team-text p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.mission-image,
+.team-image {
+    flex: 1;
+}
+
+.mission-image img,
+.team-image img {
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--hover-shadow);
+    object-fit: cover;
+}
+
+/* VALUES SECTION */
+.values-section {
+    background: #f6fbf6;
+    padding: 60px;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.value-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--hover-shadow);
+}
+
+.value-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    background: #e4f5e4;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+}
+
+.value-card h4 {
+    font-size: 1.3rem;
+    color: var(--primary-hover);
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: var(--text-muted);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    .mission-section,
+    .team-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .team-section {
+        flex-direction: column-reverse;
+        /* image below text on mobile */
+    }
+
+    .values-section {
+        padding: 40px 20px;
+    }
+}

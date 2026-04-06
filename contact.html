@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Green Gadgets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <!-- Header Section with Navbar -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="logo2.jpg.png" alt="Green Gadgets Logo" class="logo">
+                <div>
+                    <h1>Green Gadgets</h1>
+                    <p class="tagline">Eco-Friendly Tech for Everyday Life</p>
+                </div>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search eco-friendly tech...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a href="profile.html" class="icon-btn" title="Profile"><i class="fa-regular fa-user"></i></a>
+                <a href="cart.html" class="icon-btn" title="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="contact-hero page-header">
+        <h2>Get In Touch</h2>
+        <p>We'd love to hear from you. How can we help?</p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="contact-container">
+        <div class="contact-info-panel">
+            <h3>Contact Information</h3>
+            <p>Fill up the form and our team will get back to you within 24 hours.</p>
+
+            <div class="info-items">
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>contact@greengadgets.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Chennai, Tamil Nadu, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form-panel">
+            <form>
+                <div class="form-group">
+                    <label for="category">Select a Category:</label>
+                    <select id="category" class="form-control">
+                        <option value="buying-product">Inquire about buying a product</option>
+                        <option value="order-status">Check my order status</option>
+                        <option value="partnership">Explore partnership opportunities</option>
+                        <option value="feedback">Provide feedback or suggestions</option>
+                        <option value="support">Request customer support</option>
+                        <option value="other">Other inquiries</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" class="form-control" rows="5"
+                        placeholder="Type your message here"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="screenshot">Attach a Screenshot (optional):</label>
+                    <input type="file" id="screenshot" class="form-control file-input">
+                </div>
+
+                <button type="submit" class="btn-primary">Send Message <i
+                        class="fa-regular fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3><i class="fa-solid fa-leaf"></i> Green Gadgets</h3>
+                <p class="footer-text">Empowering a sustainable future through eco-friendly technology.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-envelope"></i> contact@greengadgets.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-location-dot"></i>Chennai, Tamil Nadu, India</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                    <li><a href="shop.html"><i class="fa-solid fa-angle-right"></i> Shop</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Green Gadgets. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("form");
+            const nameInput = document.getElementById("name");
+            const emailInput = document.getElementById("email");
+            const messageInput = document.getElementById("message");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Clear any previous error messages
+                clearErrors();
+
+                // Validate each field
+                let isValid = true;
+
+                if (nameInput.value.trim() === "") {
+                    showError(nameInput, "Please enter your name.");
+                    isValid = false;
+                }
+
+                if (emailInput.value.trim() === "" || !isValidEmail(emailInput.value)) {
+                    showError(emailInput, "Please enter a valid email.");
+                    isValid = false;
+                }
+
+                if (messageInput.value.trim() === "") {
+                    showError(messageInput, "Please enter your message.");
+                    isValid = false;
+                }
+
+                // If form is valid, submit it
+                if (isValid) {
+                    alert('Message Sent Successfully!');
+                    form.reset();
+                    // form.submit(); // Removed actual submit to prevent reload during static view
+                }
+            });
+
+            // Helper function to validate email format
+            function isValidEmail(email) {
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailPattern.test(email);
+            }
+
+            // Helper function to display error message
+            function showError(inputElement, message) {
+                const errorDiv = document.createElement("div");
+                errorDiv.classList.add("error-message");
+                errorDiv.style.color = "#e53935";
+                errorDiv.style.fontSize = "0.85rem";
+                errorDiv.style.marginTop = "5px";
+                errorDiv.textContent = message;
+                inputElement.parentElement.appendChild(errorDiv);
+            }
+
+            // Helper function to clear previous error messages
+            function clearErrors() {
+                const errors = document.querySelectorAll(".error-message");
+                errors.forEach(error => error.remove());
+            }
+        });
+    </script>
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

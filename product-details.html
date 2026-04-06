@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Green Gadgets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product-details.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="logo2.jpg.png" alt="Green Gadgets Logo" class="logo">
+                <div>
+                    <h1>Green Gadgets</h1>
+                    <p class="tagline">Eco-Friendly Tech for Everyday Life</p>
+                </div>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-icons">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search eco-friendly tech...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a href="profile.html" class="icon-btn" title="Profile"><i class="fa-regular fa-user"></i></a>
+                <a href="cart.html" class="icon-btn" title="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> <i class="fa-solid fa-angle-right"></i>
+        <a href="shop.html">Shop</a> <i class="fa-solid fa-angle-right"></i>
+        <span>Solar-Powered Charger</span>
+    </div>
+
+    <!-- Product Details Section -->
+    <div class="product-container">
+        <!-- Image Gallery -->
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="powerbank.jpg" alt="Solar-Powered Charger Main Image">
+                <span class="eco-tag" style="background:#fbc02d; color:#333;"><i class="fa-solid fa-leaf"></i> Best Sustainable Choice</span>
+            </div>
+            <div class="thumbnail-list">
+                <img src="powerbank.jpg" alt="Thumb 1" class="active">
+                <img src="solar-charger.jpg" alt="Thumb 2">
+                <img src="battery.jpg" alt="Thumb 3">
+            </div>
+        </div>
+
+        <!-- Info -->
+        <div class="product-info-detailed">
+            <h2>High-Efficiency Solar-Powered Charger</h2>
+
+            <div class="eco-scoring" style="display: flex; gap: 15px; margin-bottom: 20px;">
+                <div style="background: #e4f5e4; padding: 10px; border-radius: 8px; border: 1px solid var(--primary-color);">
+                    <h4 style="color: var(--primary-color); font-size: 0.85rem; margin-bottom: 5px;">Eco Score</h4>
+                    <span style="font-size: 1.4rem; font-weight: 700; color: var(--primary-hover);">9.8/10</span>
+                </div>
+                <div style="display: flex; flex-direction: column; justify-content: center; gap: 5px;">
+                    <span class="eco-badge-small"><i class="fa-solid fa-certificate"></i> Certified Energy Star</span>
+                    <span class="eco-badge-small"><i class="fa-solid fa-recycle"></i> 100% Recycled Material</span>
+                </div>
+            </div>
+            
+            <div class="reviews">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <span>(128 Customer Reviews)</span>
+            </div>
+            
+            <div class="price-section">
+                <span class="current-price">$59.00</span>
+                <span class="old-price">$79.00</span>
+                <span class="discount">-25%</span>
+            </div>
+
+            <p class="description">
+                Never run out of battery again! Our advanced Solar-Powered Charger offers a reliable, eco-friendly way to keep your devices charged anytime, anywhere. With high-efficiency solar cells and a lightweight portable design, it is perfect for travel, camping, and emergency use.
+            </p>
+
+            <ul class="features-list">
+                <li><i class="fa-solid fa-check"></i> High-efficiency 10W solar panels</li>
+                <li><i class="fa-solid fa-check"></i> Waterproof and dustproof (IP65)</li>
+                <li><i class="fa-solid fa-check"></i> Dual USB output for multi-device charging</li>
+                <li><i class="fa-solid fa-check"></i> Made with 30% recycled plastics</li>
+            </ul>
+
+            <div class="purchase-actions">
+                <div class="qty-selector">
+                    <button class="qty-btn">-</button>
+                    <input type="number" value="1" min="1">
+                    <button class="qty-btn">+</button>
+                </div>
+                <button class="btn-primary" style="padding: 12px 25px;" onclick='addToCart({"id":"detail1", "name":"High-Efficiency Solar-Powered Charger", "price":59.00, "imageUrl":"powerbank.jpg", "category":"Solar Powered"})'><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+            </div>
+
+            <div class="meta-info">
+                <p><strong>Category:</strong> Chargers & Power</p>
+                <p><strong>SKU:</strong> GG-SOLAR-01</p>
+                <p><strong>Availability:</strong> <span style="color: #2e7d32;">In Stock (45 items)</span></p>
+            </div>
+            
+            <div class="shipping-info">
+                <div class="shipping-item">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <div>
+                        <h4>Carbon-Neutral Shipping</h4>
+                        <p>We offset 100% of carbon emissions from shipping.</p>
+                    </div>
+                </div>
+                <div class="shipping-item">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <div>
+                        <h4>30-Day Returns</h4>
+                        <p>Not satisfied? Return it easily within 30 days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="related-products">
+        <h2 class="section-title">You May Also Like</h2>
+        <div class="product-grid" style="padding: 0;">
+            <div class="product-box">
+                <img src="waterproof charger.jpg" alt="Solar Charger">
+                <div class="product-content">
+                    <h2>Waterproof Charger</h2>
+                    <div class="product-price">$69.00</div>
+                    <div class="product-actions" style="margin-top: 15px;">
+                        <button class="btn-primary" style="width: 100%;"><i class="fa-solid fa-eye"></i> View</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-box">
+                <img src="wooden case.jpg" alt="Eco Phone Case">
+                <div class="product-content">
+                    <h2>Wooden Phone Case</h2>
+                    <div class="product-price">$25.00</div>
+                    <div class="product-actions" style="margin-top: 15px;">
+                        <button class="btn-primary" style="width: 100%;"><i class="fa-solid fa-eye"></i> View</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-box">
+                <img src="battery.jpg" alt="Rechargeable Batteries">
+                <div class="product-content">
+                    <h2>Rechargeable Batteries</h2>
+                    <div class="product-price">$35.00</div>
+                    <div class="product-actions" style="margin-top: 15px;">
+                        <button class="btn-primary" style="width: 100%;"><i class="fa-solid fa-eye"></i> View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bottom" style="margin-top: 0">
+            <p>© 2026 Green Gadgets. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

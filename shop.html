@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Gadgets - Shop Eco-Friendly Tech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="logo2.jpg.png" alt="Green Gadgets Logo" class="logo">
+                <div>
+                    <h1>Green Gadgets</h1>
+                    <p class="tagline">Eco-Friendly Tech for Everyday Life</p>
+                </div>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search eco-friendly tech...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a href="profile.html" class="icon-btn" title="Profile"><i class="fa-regular fa-user"></i></a>
+                <a href="cart.html" class="icon-btn" title="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h2>Shop Our Products</h2>
+        <p>Discover sustainable technology designed exclusively for a better future.</p>
+    </div>
+
+    <!-- Shop Content -->
+    <div class="shop-container">
+        <!-- Filters -->
+        <aside class="shop-sidebar">
+            <div class="filter-group">
+                <h3>Search</h3>
+                <div class="filter-search">
+                    <input type="text" placeholder="Search products...">
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <h3>Sustainability</h3>
+                <ul class="category-list">
+                    <li><a href="#"><i class="fa-solid fa-recycle"></i> Recycled Materials</a></li>
+                    <li><a href="#"><i class="fa-solid fa-plug-circle-check"></i> Energy Efficient</a></li>
+                    <li><a href="#"><i class="fa-solid fa-sun"></i> Solar Powered</a></li>
+                    <li><a href="#"><i class="fa-solid fa-leaf"></i> Biodegradable</a></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li><a href="#" class="active">All Products</a></li>
+                    <li><a href="#">Solar Chargers</a></li>
+                    <li><a href="#">Eco Accessories</a></li>
+                    <li><a href="#">Smart Home</a></li>
+                    <li><a href="#">Energy Savers</a></li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <input type="range" min="0" max="200" value="200" class="price-slider">
+                <div class="price-labels">
+                    <span>$0</span>
+                    <span>$200+</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <main class="shop-main">
+            <div class="shop-controls">
+                <p>Showing 1-6 of 24 results</p>
+                <div class="sort-by">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="popularity">Popularity</option>
+                        <option value="low-high">Price: Low to High</option>
+                        <option value="high-low">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="products" class="product-grid">
+                <!-- Products will be loaded here dynamically by products.js -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3><i class="fa-solid fa-leaf"></i> Green Gadgets</h3>
+                <p class="footer-text">Empowering a sustainable future through eco-friendly technology.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-envelope"></i> contact@greengadgets.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-location-dot"></i>Chennai, Tamil Nadu, India</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                    <li><a href="shop.html"><i class="fa-solid fa-angle-right"></i> Shop</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Green Gadgets. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="products.js"></script>
+    <script src="filters.js"></script>
+    <script src="search.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>

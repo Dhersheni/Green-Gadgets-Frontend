@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Gadgets - Eco-Friendly Tech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="logo2.jpg.png" alt="Green Gadgets Logo" class="logo">
+                <div>
+                    <h1>Green Gadgets</h1>
+                    <p class="tagline">Eco-Friendly Tech for Everyday Life</p>
+                </div>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-icons">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search eco-friendly tech...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a href="profile.html" class="icon-btn" title="Profile"><i class="fa-regular fa-user"></i></a>
+                <a href="cart.html" class="icon-btn" title="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="eco-badge"><i class="fa-solid fa-leaf"></i> Sustainable Technology</span>
+            <h2>Eco-Friendly Innovations for a Greener Tomorrow</h2>
+            <p>
+                Explore cutting-edge gadgets designed to reduce waste, save energy,
+                and help you live a smarter, more sustainable lifestyle.
+            </p>
+            <div class="hero-buttons">
+                <a href="shop.html" class="btn-primary">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="about.html" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <i class="fa-solid fa-recycle feature-icon"></i>
+            <h3>100% Eco-Friendly</h3>
+            <p>Products made with sustainable materials and renewable energy.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-bolt-lightning feature-icon"></i>
+            <h3>Energy Saving</h3>
+            <p>Reduce electricity consumption with smart and efficient devices.</p>
+        </div>
+
+        <div class="feature-card">
+            <i class="fa-solid fa-earth-americas feature-icon"></i>
+            <h3>Planet First</h3>
+            <p>Technology that supports a cleaner, greener, and better future.</p>
+        </div>
+    </section>
+
+    <main class="product-info">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-box">
+                <img src="powerbank.jpg" alt="Solar-Powered Charger">
+                <span class="product-tag">Best Seller</span>
+                <div class="product-content">
+                    <div class="eco-badges">
+                        <span class="eco-badge-small"><i class="fa-solid fa-sun"></i> Solar Powered</span>
+                        <span class="eco-score-badge">Eco Score: 9.8/10</span>
+                    </div>
+                    <h2>Solar-Powered Charger</h2>
+                    <div class="product-price">$59.00</div>
+                    <p>Our Solar-Powered Charger offers a reliable, eco-friendly way to keep your devices charged anytime, anywhere.</p>
+                    <ul class="product-features">
+                        <li>Fast Charging</li>
+                        <li>Weather Resistant</li>
+                    </ul>
+                    <div class="product-actions">
+                        <button class="btn-primary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <a href="product-details.html" class="btn-secondary" title="View Details"><i class="fa-regular fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <img src="phone.jpg" alt="Eco-Friendly Phone Case">
+                <span class="product-tag">Eco Choice</span>
+                <div class="product-content">
+                    <div class="eco-badges">
+                        <span class="eco-badge-small"><i class="fa-solid fa-recycle"></i> 100% Recycled Material</span>
+                        <span class="eco-score-badge">Eco Score: 9.5/10</span>
+                    </div>
+                    <h2>Eco-Friendly Phone Case</h2>
+                    <div class="product-price">$25.00</div>
+                    <p>Protect your phone and the environment with our biodegradable phone case. Made from plant-based materials.</p>
+                    <ul class="product-features">
+                        <li>Plant-Based</li>
+                        <li>Compostable</li>
+                    </ul>
+                    <div class="product-actions">
+                        <button class="btn-primary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <a href="product-details.html" class="btn-secondary" title="View Details"><i class="fa-regular fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-box">
+                <img src="smart home.jpg" alt="Energy-Efficient Smart Home">
+                <span class="product-tag">Smart Living</span>
+                <div class="product-content">
+                    <div class="eco-badges">
+                        <span class="eco-badge-small"><i class="fa-solid fa-plug-circle-check"></i> Energy Saver</span>
+                        <span class="eco-score-badge">Eco Score: 9.2/10</span>
+                    </div>
+                    <h2>Smart Home Hub</h2>
+                    <div class="product-price">$120.00</div>
+                    <p>Take control of your home energy usage with smart devices designed to reduce waste and improve efficiency.</p>
+                    <ul class="product-features">
+                        <li>App Control</li>
+                        <li>Energy Tracking</li>
+                    </ul>
+                    <div class="product-actions">
+                        <button class="btn-primary"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <a href="product-details.html" class="btn-secondary" title="View Details"><i class="fa-regular fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="why-green">
+        <h2 class="section-title">Why Green Gadgets?</h2>
+        <div class="impact-stats-grid">
+            <div class="impact-stat">
+                <i class="fa-solid fa-tree"></i>
+                <h3>10,000+</h3>
+                <p>Trees Planted</p>
+            </div>
+            <div class="impact-stat">
+                <i class="fa-solid fa-smog"></i>
+                <h3>50 Tons</h3>
+                <p>Carbon Offset</p>
+            </div>
+            <div class="impact-stat">
+                <i class="fa-solid fa-bottle-water"></i>
+                <h3>5,000 lbs</h3>
+                <p>Plastic Recycled</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="eco-tips-section">
+        <div class="tips-container">
+            <h2><i class="fa-solid fa-lightbulb"></i> Daily Eco Tip</h2>
+            <p>"Did you know? Leaving devices plugged in while fully charged accounts for 10% of residential energy use. Unplug to save power and money!"</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3><i class="fa-solid fa-leaf"></i> Green Gadgets</h3>
+                <p class="footer-text">Empowering a sustainable future through eco-friendly technology.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-envelope"></i> contact@greengadgets.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu, India</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                    <li><a href="shop.html"><i class="fa-solid fa-angle-right"></i> Shop</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Green Gadgets. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

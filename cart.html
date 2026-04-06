@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Green Gadgets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="logo2.jpg.png" alt="Green Gadgets Logo" class="logo">
+                <div>
+                    <h1>Green Gadgets</h1>
+                    <p class="tagline">Eco-Friendly Tech for Everyday Life</p>
+                </div>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search eco-friendly tech...">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a href="profile.html" class="icon-btn" title="Profile"><i class="fa-regular fa-user"></i></a>
+                <a href="cart.html" class="icon-btn" title="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="cart-container">
+        <h2 class="page-title">Your Shopping Cart</h2>
+
+        <div class="cart-layout">
+            <!-- Cart Items -->
+            <div class="cart-items" id="cart-items-container">
+                <!-- Cart items will be loaded dynamically here -->
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$109.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Eco Shipping</span>
+                    <span>$5.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Estimated Tax</span>
+                    <span>$10.90</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>$124.90</span>
+                </div>
+
+                <div class="eco-message">
+                    <h4 style="margin-bottom: 5px;"><i class="fa-solid fa-leaf"></i> Great Sustainable Choice!</h4>
+                    <p style="font-size: 0.85rem; color: #333;">By purchasing these items, you are saving <strong>15 kWh
+                            of energy</strong> and offsetting <strong>2.5kg of carbon emissions</strong>.</p>
+                </div>
+
+                <button class="btn-primary checkout-btn">Proceed to Checkout <i class="fa-solid fa-lock"></i></button>
+                <a href="shop.html" class="continue-shopping">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3><i class="fa-solid fa-leaf"></i> Green Gadgets</h3>
+                <p class="footer-text">Empowering a sustainable future through eco-friendly technology.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa-solid fa-envelope"></i> contact@greengadgets.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                    <li><a href="shop.html"><i class="fa-solid fa-angle-right"></i> Shop</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Green Gadgets. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+</body>
+
+</html>
