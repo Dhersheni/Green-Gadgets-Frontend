@@ -4,31 +4,31 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     // Find all search inputs on the page (mobile and desktop navigation might have different ones)
     const searchInputs = document.querySelectorAll(".search-bar input");
-    
+
     searchInputs.forEach(input => {
         // Listen to every key typed into the search bar
         input.addEventListener("keyup", (event) => {
-            
+
             // Get the text typed, normalize to lowercase for easy matching
             const searchTerm = event.target.value.toLowerCase().trim();
-            
+
             // Filter the global 'allProducts' array (which is loaded in products.js)
             const filteredProducts = allProducts.filter(product => {
-                
+
                 // Safely convert properties to lowercase for comparison
                 const safeName = (product.name || "").toLowerCase();
                 const safeDesc = (product.description || "").toLowerCase();
                 const safeBadge = (product.ecoBadge || "").toLowerCase();
-                
+
                 // Check if the search term exists in Name, Description, or Eco Badge strings
-                return safeName.includes(searchTerm) || 
-                       safeDesc.includes(searchTerm) || 
-                       safeBadge.includes(searchTerm);
+                return safeName.includes(searchTerm) ||
+                    safeDesc.includes(searchTerm) ||
+                    safeBadge.includes(searchTerm);
             });
-            
+
             // Check if we are on a page that actually has the products grid to render into
             const productsContainer = document.getElementById("products");
             if (productsContainer) {

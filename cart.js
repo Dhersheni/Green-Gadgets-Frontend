@@ -42,7 +42,7 @@ async function addToCart(product) {
             quantity: 1
         };
 
-        const response = await fetch("http://localhost:51296/cart", {
+        const response = await fetch("https://green-gadgets-backend.onrender.com/cart", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -64,7 +64,7 @@ async function addToCart(product) {
     // 2. Local State Management (UI Cache)
     // Check if product already exists in local cart array using its ID
     const existingItem = cart.find(item => item.id === product.id);
-    
+
     if (existingItem) {
         // If it exists, gracefully increment the quantity locally
         existingItem.quantity += 1;
@@ -81,7 +81,7 @@ async function addToCart(product) {
             quantity: 1
         });
     }
-    
+
     saveCart();
     alert(`Added ${product.name} to your cart successfully!\nEco Action!`);
 }
@@ -117,10 +117,10 @@ function removeFromCart(productId) {
  */
 function renderCartPage() {
     const cartContainer = document.getElementById("cart-items-container");
-    
+
     // Only run this code if we are actually on the cart.html page
     if (!cartContainer) return;
-    
+
     // If cart is empty, show a message
     if (cart.length === 0) {
         cartContainer.innerHTML = "<p>Your eco-friendly cart is currently empty. Head over to the shop!</p>";
@@ -134,7 +134,7 @@ function renderCartPage() {
     // Loop through each item and create the HTML structure dynamically
     cart.forEach(item => {
         const itemTotal = (item.price * item.quantity).toFixed(2);
-        
+
         const cartItemHTML = `
             <div class="cart-item">
                 <img src="${item.image || 'logo.jpg'}" alt="${item.name}">
@@ -156,7 +156,7 @@ function renderCartPage() {
                 </button>
             </div>
         `;
-        
+
         cartContainer.insertAdjacentHTML('beforeend', cartItemHTML);
     });
 
@@ -172,7 +172,7 @@ function updateCartSummary() {
 
     // Calculate subtotal
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    
+
     // Simple mock logic for eco shipping and tax
     const ecoShipping = subtotal > 0 ? 5.00 : 0;
     const tax = subtotal * 0.10; // 10% tax
