@@ -140,7 +140,7 @@ function renderCartPage() {
                 <img src="${item.image || 'logo.jpg'}" alt="${item.name}">
                 <div class="item-details">
                     <h3>${item.name}</h3>
-                    <p class="item-price">$${item.price.toFixed(2)}</p>
+                    <p class="item-price">₹${item.price.toFixed(2)}</p>
                     <p style="font-size: 0.8rem; color: #2e7d32; display: inline-flex; align-items:center;">
                         <i class="fa-solid fa-leaf" style="margin-right: 5px;"></i> Eco Score: ${item.ecoScore}
                     </p>
@@ -150,7 +150,7 @@ function renderCartPage() {
                     <input type="number" value="${item.quantity}" min="1" onchange="updateQuantity('${item.id}', this.value)">
                     <button class="qty-btn" onclick="updateQuantity('${item.id}', ${item.quantity + 1})">+</button>
                 </div>
-                <div class="item-total">$${itemTotal}</div>
+                <div class="item-total">₹${itemTotal}</div>
                 <button class="item-remove" title="Remove Item" onclick="removeFromCart('${item.id}')">
                     <i class="fa-solid fa-trash"></i>
                 </button>
@@ -187,19 +187,19 @@ function updateCartSummary() {
         <h3>Order Summary</h3>
         <div class="summary-row">
             <span>Subtotal</span>
-            <span>$${subtotal.toFixed(2)}</span>
+            <span>₹${subtotal.toFixed(2)}</span>
         </div>
         <div class="summary-row">
             <span>Eco Shipping</span>
-            <span>$${ecoShipping.toFixed(2)}</span>
+            <span>₹${ecoShipping.toFixed(2)}</span>
         </div>
         <div class="summary-row">
             <span>Estimated Tax (10%)</span>
-            <span>$${tax.toFixed(2)}</span>
+            <span>₹${tax.toFixed(2)}</span>
         </div>
         <div class="summary-total">
             <span>Total</span>
-            <span>$${total.toFixed(2)}</span>
+            <span>₹${total.toFixed(2)}</span>
         </div>
         
         ${subtotal > 0 ? `

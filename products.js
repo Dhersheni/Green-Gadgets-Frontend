@@ -84,7 +84,7 @@ function renderProducts(productsToRender) {
                     </div>
 
                     <h2>${safeName}</h2>
-                    <div class="product-price">$${safePrice}</div>
+                    <div class="product-price">₹${safePrice}</div>
                     <p style="font-size: 0.9rem;">${safeDesc}</p>
 
                     <p style="font-size: 0.85rem; margin-top: 10px; margin-bottom: 2px;"><strong>Carbon Saved:</strong> ${safeCarbon}</p>

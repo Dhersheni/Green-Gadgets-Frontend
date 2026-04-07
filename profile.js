@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 2. Update the specific DOM IDs injected earlier
     itemsPurchasedEl.textContent = userProfileData.itemsPurchased;
-    totalSpentEl.textContent = `$${userProfileData.totalSpent.toFixed(2)}`;
+    totalSpentEl.textContent = `₹${userProfileData.totalSpent.toFixed(2)}`;
     carbonSavedEl.textContent = `${userProfileData.carbonSaved} kg`;
     energySavedEl.textContent = `${userProfileData.energySaved} kWh`;
 
